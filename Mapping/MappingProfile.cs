@@ -11,10 +11,10 @@ namespace Mapping
            
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<Product, ProductCreateDto>().ReverseMap();
-            CreateMap<Product, ProductUpdateDto>().ReverseMap();
+            CreateMap<Product, ProductUpdateDto>().ReverseMap(); 
             CreateMap<Category, CategoryDto>().ReverseMap();
             CreateMap<Category, CategoryCreateDto>().ReverseMap();
-            CreateMap<Category, CategoryUpdateDto>().ReverseMap();
+          
             
         }
     }

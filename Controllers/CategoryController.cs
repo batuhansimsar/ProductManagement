@@ -14,7 +14,7 @@ namespace Products.Controllers
             _categoryService = categoryService;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}")] 
         public ActionResult<CategoryDto> GetCategory(int id)
         {
             var category = _categoryService.GetCategoryById(id);
@@ -39,14 +39,6 @@ namespace Products.Controllers
             return CreatedAtAction(nameof(GetCategory), new { id = created.Id }, created);
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateCategory(int id, [FromBody] CategoryUpdateDto updatedCategory)
-        {
-            if (id != updatedCategory.Id)
-                return BadRequest();
-            _categoryService.UpdateCategory(updatedCategory);
-            return NoContent();
-        }
 
         [HttpDelete("{id}")]
         public IActionResult DeleteCategory(int id)

@@ -2,30 +2,30 @@
 using Products.Data;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using Products.DTO; // Doğru şekilde eklenmeli
-using Microsoft.AspNetCore.Builder; // Eklendi
-using Microsoft.AspNetCore.Hosting; // Eklendi
-using Microsoft.Extensions.DependencyInjection; // Eklendi
-using Microsoft.Extensions.Configuration; // Eklendi (GetConnectionString için gerekli)
-using Swashbuckle.AspNetCore.SwaggerGen; // SwaggerGen için gerekli
-using Microsoft.Extensions.Hosting; // IsDevelopment için gerekli
-using Microsoft.AspNetCore.Http; // WriteAsync için gerekli
+using Products.DTO; 
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting; 
+using Microsoft.Extensions.DependencyInjection; 
+using Microsoft.Extensions.Configuration; 
+using Swashbuckle.AspNetCore.SwaggerGen; 
+using Microsoft.Extensions.Hosting; 
+using Microsoft.AspNetCore.Http; 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔧 Veritabanı bağlantısı
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-    options.EnableSensitiveDataLogging(); // Geliştirme ortamı için faydalı
+    options.EnableSensitiveDataLogging();
 });
 
-// 🔧 Controller ve Swagger servisleri
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// 🔧 CORS (Frontend bağlantısı için gerekli)
+
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
@@ -40,28 +40,27 @@ builder.Services.AddAutoMapper(typeof(Mapping.MappingProfile));
 builder.Services.AddScoped<Services.IProductService, Services.ProductService>();
 builder.Services.AddScoped<Services.ICategoryService, Services.CategoryService>();
 builder.Services.AddFluentValidationAutoValidation();
-// Replace 'ProductCreateDtoValidator' with an existing validator class, e.g. 'ProductCreateDto'
-builder.Services.AddValidatorsFromAssemblyContaining<ProductCreateDto>(); // Namespace zaten using ile eklendi
+
+builder.Services.AddValidatorsFromAssemblyContaining<ProductCreateDto>(); 
 
 var app = builder.Build();
 
-// 🔧 Swagger sadece geliştirme ortamında açık
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// 💡 HTTPS yönlendirme
+
 app.UseHttpsRedirection();
 
-// 🔓 CORS aktif et
+
 app.UseCors();
 
-// 🔐 Yetkilendirme (Gerekirse)
+
 app.UseAuthorization();
 
-// 🎯 Controller'ları API ile eşle
 app.MapControllers();
 
 app.UseExceptionHandler(errorApp =>
@@ -79,5 +78,5 @@ app.UseExceptionHandler(errorApp =>
     });
 });
 
-// 🚀 Uygulamayı başlat
+
 app.Run();

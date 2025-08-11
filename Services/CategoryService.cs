@@ -35,16 +35,6 @@ namespace Services
             return _mapper.Map<CategoryDto>(category);
         }
 
-        public void UpdateCategory(CategoryUpdateDto categoryDto)
-        {
-            var category = _context.Categories.Find(categoryDto.Id);
-            if (category != null)
-            {
-                _mapper.Map(categoryDto, category);
-                _context.SaveChanges();
-            }
-        }
-
         public void DeleteCategory(int id)
         {
             var category = _context.Categories.Find(id);
