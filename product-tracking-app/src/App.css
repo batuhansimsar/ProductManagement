@@ -1,0 +1,154 @@
+/* Ürünler animasyonlu açılış için */
+.product-list {
+  animation: fadeInSlide 0.7s cubic-bezier(.4,2,.6,1);
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #24292f;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #58a6ff;
+}
+
+nav button {
+  margin-left: auto;
+  background: #2ea44f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+nav button:hover {
+  background: #218838;
+}
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 32px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.product-card {
+  background: #f3f4f6;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  padding: 20px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+}
+
+.product-card img {
+  border-radius: 8px;
+  margin-top: 8px;
+  max-width: 100%;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding: 8px 12px;
+  margin-top: 8px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+button {
+  background: #2ea44f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+form > div {
+  margin-bottom: 12px;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1000px) {
+  .container {
+    max-width: 98vw;
+    padding: 16px;
+  }
+  .product-list {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+  }
+  .container {
+    padding: 10px;
+    margin: 12px;
+  }
+  .product-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .product-card {
+    width: 100%;
+    padding: 14px;
+  }
+}
