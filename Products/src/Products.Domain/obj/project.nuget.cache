@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wbPn1xNIajUQvCJTES2YfJX+BrTXFWVe8ATCHB2nEqMLv4mksXk/PYJSvLlunHjjWt9uWwgVKasHFbjLS5K+ow==",
+  "success": true,
+  "projectFilePath": "/Users/esrefbatuhansimsar/Desktop/clean/Products/src/Products.Domain/Products.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/esrefbatuhansimsar/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
