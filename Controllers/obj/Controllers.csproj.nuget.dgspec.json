@@ -1,0 +1,418 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Controllers/Controllers.csproj": {}
+  },
+  "projects": {
+    "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Controllers/Controllers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Controllers/Controllers.csproj",
+        "projectName": "Controllers",
+        "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Controllers/Controllers.csproj",
+        "packagesPath": "/Users/esrefbatuhansimsar/.nuget/packages/",
+        "outputPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Controllers/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/esrefbatuhansimsar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj"
+              },
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj"
+              },
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Services/Services.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Services/Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Data/Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Data/Data.csproj",
+        "projectName": "Data",
+        "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Data/Data.csproj",
+        "packagesPath": "/Users/esrefbatuhansimsar/.nuget/packages/",
+        "outputPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/esrefbatuhansimsar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj",
+        "packagesPath": "/Users/esrefbatuhansimsar/.nuget/packages/",
+        "outputPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/esrefbatuhansimsar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.11.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Mapping/Mapping.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Mapping/Mapping.csproj",
+        "projectName": "Mapping",
+        "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Mapping/Mapping.csproj",
+        "packagesPath": "/Users/esrefbatuhansimsar/.nuget/packages/",
+        "outputPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Mapping/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/esrefbatuhansimsar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj"
+              },
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj",
+        "projectName": "Models",
+        "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj",
+        "packagesPath": "/Users/esrefbatuhansimsar/.nuget/packages/",
+        "outputPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/esrefbatuhansimsar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Services/Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Services/Services.csproj",
+        "projectName": "Services",
+        "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Services/Services.csproj",
+        "packagesPath": "/Users/esrefbatuhansimsar/.nuget/packages/",
+        "outputPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Services/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/esrefbatuhansimsar/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Data/Data.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Data/Data.csproj"
+              },
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/DTO/DTO.csproj"
+              },
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Mapping/Mapping.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Mapping/Mapping.csproj"
+              },
+              "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj": {
+                "projectPath": "/Users/esrefbatuhansimsar/Desktop/ProductManagement-main/Models/Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
